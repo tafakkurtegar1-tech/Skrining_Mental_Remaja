@@ -14,15 +14,15 @@ Aplikasi ini dikembangkan sebagai bagian dari pelaksanaan Praktek Kerja Lapangan
 1. **Dashboard Utama (`index.html`):** Halaman awal yang menyambut pengguna dengan dua tombol navigasi utama:
    * **Tombol Registrasi:** Mengarahkan pengguna langsung menuju halaman pengisian data diri dan kuesioner.
    * **Tombol Tentang Skrining:** Menampilkan informasi edukasi kesehatan mental, penjelasan instrumen PHQ-9, serta penekanan jaminan privasi data.
-2. **Formulir & Kuesioner (`add.html`):** Pengisian identitas singkat (nama/inisial, usia, dusun) serta 9 butir pertanyaan kuesioner PHQ-9.
-3. **Kalkulasi Otomatis:** Perhitungan total skor secara instan menggunakan JavaScript di sisi klien.
+2. **Formulir & Kuesioner (`add.html & survey.html`):** Pengisian identitas singkat (nama/inisial, usia, dusun) serta 9 butir pertanyaan kuesioner PHQ-9.
+3. **Kalkulasi Otomatis (`result.html`):** Perhitungan total skor secara instan menggunakan JavaScript dan hasilnya akan tampil di halaman result.html.
 4. **Jaminan Privasi (*Local Storage*):** Penyimpanan data dilakukan secara lokal di peramban pengguna untuk menjaga kerahasiaan penuh tanpa memerlukan database terpusat pada tahap awal.
 5. **Ekspor Laporan PDF:** Fitur untuk mengunduh hasil skrining dalam format dokumen PDF formal yang siap disimpan atau dibawa ke tenaga profesional.
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Frontend:** HTML5, CSS, JavaScript 
 - **Logika & Penyimpanan:** Browser *Local Storage*, DOM Manipulation
 - **Pustaka Pendukung:** Pustaka render PDF (jsPDF / html2pdf)
 
