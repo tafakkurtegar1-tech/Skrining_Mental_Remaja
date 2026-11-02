@@ -47,10 +47,10 @@ Berikut adalah struktur direktori file di dalam repositori proyek:
  ┣ 📜 survey.html         # Halaman utama modul kuesioner skrining PHQ-9
  ┗ 📜 README.md           # Dokumentasi penjelasan proyek
 
----
+```text
 ## 🚀 Cara Menjalankan Aplikasi
 
----
+
 ## 👨‍💻 Repositori dan proyek aplikasi web ini dikembangkan oleh:
 * **Nama:** Tegar Tali Tafakur
 * **NIM:** 2012231051[cite: 1]
