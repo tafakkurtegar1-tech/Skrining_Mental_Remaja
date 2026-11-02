@@ -28,6 +28,14 @@ Aplikasi ini dikembangkan sebagai bagian dari pelaksanaan Praktek Kerja Lapangan
 
 ---
 
+## 👨‍💻 Repositori dan proyek aplikasi web ini dikembangkan oleh:
+Nama: Tegar Tali Tafakur
+NIM: 2012231051
+Program Studi: Sistem Informasi
+Universitas: Universitas M. H. Thamrin 
+
+---
+
 ## 📂 Struktur Proyek & Hubungan Antarfile
 Berikut adalah struktur direktori file di dalam repositori proyek:
 
@@ -50,8 +58,4 @@ Berikut adalah struktur direktori file di dalam repositori proyek:
 🚀 Cara Menjalankan Aplikasi
 
 
-👨‍💻 Repositori dan proyek aplikasi web ini dikembangkan oleh:
-Nama: Tegar Tali Tafakur
-NIM: 2012231051
-Program Studi: Sistem Informasi
-Universitas: Universitas M. H. Thamrin 
+
