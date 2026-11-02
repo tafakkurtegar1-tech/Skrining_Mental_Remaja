@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrining Mental Digital PHQ-9 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-sea">
+
+    <div class="main-box survey-container">
+        <header class="header-section">
+            <h1 class="admin-title" style="color: white; margin-bottom: 5px;">Skrining Kesehatan Mental</h1>
+            <h2 class="admin-subtitle">Kuesioner PHQ-9 Digital</h2>
+        </header>
+
+        <div class="info-banner">
+            <strong>Instruksi:</strong> Dalam <b>2 minggu terakhir</b>, seberapa sering Anda terganggu oleh masalah-masalah berikut? Pilih jawaban yang paling menggambarkan kondisi Anda.
+        </div>
+
+        <form id="surveyForm">
+            <!-- Tempat di mana pertanyaan kuesioner akan dimuat secara otomatis oleh survey.js -->
+            <div id="questionContainer">
+                <p class="loading-text">
+                    Sedang memuat pertanyaan... <br>
+                    <small>Jika pesan ini tidak hilang, pastikan file scripts/survey.js sudah terhubung dengan benar.</small>
+                </p>
+            </div>
+
+            <div class="footer-action">
+                <button type="submit" class="btn-accent btn-large">
+                    SIMPAN & LIHAT HASIL
+                </button>
+                <div class="footer-navigation">
+                    <a href="index.html" class="back-link link-danger">← Batalkan dan Kembali</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript survey -->
+    <script src="scripts/survey.js"></script>
+</body>
+</html>

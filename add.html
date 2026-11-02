@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi - Aplikasi Digital Mental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-sea">
+
+    <div class="glass-container main-box">
+        <header class="header-section">
+            <h1 class="admin-title" style="color: white; margin-bottom: 5px;">Registrasi Pasien</h1>
+            <p class="admin-subtitle">Silakan isi data diri sebelum melakukan skrining</p>
+        </header>
+        
+        <form id="posyanduForm">
+            <div class="form-wrapper" style="display: flex; flex-direction: column; gap: 15px;">
+                
+                <div>
+                    <label class="label-small">Nama Lengkap</label>
+                    <input type="text" id="nama" class="form-input" placeholder="Masukkan nama lengkap" required>
+                </div>
+                
+                <div>
+                    <label class="label-small">Jenis Kelamin</label>
+                    <select id="jenis_kelamin" class="form-input" required>
+                        <option value="">Pilih Jenis Kelamin</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="flex-row">
+                    <div>
+                        <label class="label-small">Tempat Lahir</label>
+                        <input type="text" id="tempat_lahir" class="form-input" placeholder="Kota/Kabupaten" required>
+                    </div>
+                    <div>
+                        <label class="label-small">Tanggal Lahir</label>
+                        <input type="date" id="tanggal_lahir" class="form-input" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="label-small">Email (Opsional)</label>
+                    <input type="email" id="email" class="form-input" placeholder="emailpasien@mail.com">
+                </div>
+
+                <div>
+                    <label class="label-small">Alamat Lengkap</label>
+                    <textarea id="alamat" class="form-input form-textarea" placeholder="Contoh: Desa Sukarame RT 01/02" required style="height: 70px;"></textarea>
+                </div>
+
+                <div>
+                    <label class="label-small">Nomor WhatsApp Aktif</label>
+                    <input type="tel" id="no_telp" class="form-input" placeholder="08xxxxxxxxxx" required>
+                </div>
+
+                <div class="flex-row">
+                    <div>
+                        <label class="label-small">Berat Badan (kg)</label>
+                        <input type="number" id="berat" class="form-input" placeholder="Contoh: 55" required>
+                    </div>
+                    <div>
+                        <label class="label-small">Tinggi Badan (cm)</label>
+                        <input type="number" id="tinggi" class="form-input" placeholder="Contoh: 165" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="label-small">No Registrasi</label>
+                    <input type="text" id="no_registrasi" class="form-input input-readonly" readonly>
+                </div>
+
+                <button type="submit" id="btnSimpan" class="btn-primary" style="margin-top: 10px;">
+                    Simpan & Lanjut Survey
+                </button>
+
+                <div style="text-align: center; margin-top: 5px;">
+                    <a href="index.html" class="btn-back">&larr; Kembali ke Beranda</a>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const randomNo = 'REG-' + Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('no_registrasi').value = randomNo;
+        });
+
+        document.getElementById('posyanduForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const tglLahir = new Date(document.getElementById('tanggal_lahir').value);
+            const today = new Date();
+            let usia = today.getFullYear() - tglLahir.getFullYear();
+            const m = today.getMonth() - tglLahir.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < tglLahir.getDate())) {
+                usia--;
+            }
+
+            const dataPasien = {
+                nama: document.getElementById('nama').value,
+                jenis_kelamin: document.getElementById('jenis_kelamin').value,
+                tempat_lahir: document.getElementById('tempat_lahir').value,
+                tanggal_lahir: document.getElementById('tanggal_lahir').value,
+                usia: isNaN(usia) ? "-" : usia,
+                email: document.getElementById('email').value,
+                alamat: document.getElementById('alamat').value,
+                no_telp: document.getElementById('no_telp').value,
+                berat: document.getElementById('berat').value,
+                tinggi: document.getElementById('tinggi').value,
+                no_registrasi: document.getElementById('no_registrasi').value,
+                tanggal: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+            };
+
+            localStorage.setItem('pasienData', JSON.stringify(dataPasien));
+            window.location.href = 'survey.html';
+        });
+    </script>
+</body>
+</html>

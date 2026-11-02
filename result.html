@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Skrining - Digital</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Library untuk unduh PDF otomatis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body class="bg-sea">
+
+    <div class="main-box result-container">
+        <header class="header-section">
+            <h1 class="admin-title">Hasil Skrining Anda</h1>
+            <p class="admin-subtitle">Kuesioner Kesehatan Mental (PHQ-9)</p>
+        </header>
+        
+        <!-- Lingkaran Skor -->
+        <div id="scoreBox" class="bg-aman">
+            <span id="displaySkor">0</span>
+        </div>
+
+        <div class="status-card">
+            <h2 id="statusTitle">Menganalisis...</h2>
+            <p id="statusDesc"></p>
+        </div>
+
+        <div class="action-group">
+            <button onclick="cetakPDF()" class="btn-print">Unduh Hasil (PDF)</button>
+            <button onclick="window.location.href='index.html'" class="btn-accent">Selesai & Kembali</button>
+        </div>
+    </div>
+
+    <!-- Area Cetak PDF Tersembunyi -->
+    <div id="print-area">
+        <h2 style="text-align: center; margin-bottom: 5px;">LAPORAN HASIL SKRINING KESEHATAN MENTAL (PHQ-9)</h2>
+        <h4 style="text-align: center; margin-top: 0; color: #555;">Skrining Mental Desa Sukarame</h4>
+        <hr style="border: 1px solid #000; margin: 20px 0;">
+        
+        <div style="border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
+            <p style="margin: 0 0 5px 0;"><strong>Total Skor PHQ-9:</strong> <span id="printSkor">0</span></p>
+            <p style="margin: 0 0 5px 0;"><strong>Interpretasi / Kategori:</strong> <span id="printTitle">-</span></p>
+            <p style="margin: 10px 0 0 0;"><strong>Saran / Tindak Lanjut:</strong><br><span id="printDesc">-</span></p>
+        </div>
+        
+        <p style="font-size: 9pt; color: #777; margin-top: 40px; text-align: center;">
+            *Dokumen ini diterbitkan secara mandiri melalui Aplikasi Skrining Mental Digital.
+        </p>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript hasil -->
+    <script src="scripts/result.js"></script>
+</body>
+</html>
