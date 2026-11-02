@@ -28,11 +28,10 @@ Aplikasi ini dikembangkan sebagai bagian dari pelaksanaan Praktek Kerja Lapangan
 
 ---
 
-
-
 ## 📂 Struktur Proyek & Hubungan Antarfile
 Berikut adalah struktur direktori file di dalam repositori proyek:
 
+```text
 📦 Aplikasi_Skrining_Mental_Remaja
  ┣ 📂 assets/
  ┃ ┣ 📜 cipengan.jpeg     # Gambar dokumentasi / ilustrasi lokasi studi kasus Desa Sukarame
