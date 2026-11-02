@@ -30,9 +30,9 @@ Aplikasi ini dikembangkan sebagai bagian dari pelaksanaan Praktek Kerja Lapangan
 
 ## 👨‍💻 Penulis
 * **Nama:** Tegar Tali Tafakur
-* **NIM:** 2012231051[cite: 1]
-* **Program Studi:** Sistem Informasi[cite: 1]
-* **Universitas M. H. Thamrin**[cite: 1]
+* **NIM:** 2012231051
+* **Program Studi:** Sistem Informasi
+* **Universitas M. H. Thamrin**
 ---
 
 ## 📂 Struktur Proyek & Hubungan Antarfile
