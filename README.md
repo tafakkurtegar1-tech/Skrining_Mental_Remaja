@@ -18,13 +18,13 @@ Aplikasi ini dikembangkan sebagai bagian dari pelaksanaan Praktek Kerja Lapangan
 3. **Kalkulasi Otomatis:** Perhitungan total skor secara instan menggunakan JavaScript di sisi klien.
 4. **Jaminan Privasi (*Local Storage*):** Penyimpanan data dilakukan secara lokal di peramban pengguna untuk menjaga kerahasiaan penuh tanpa memerlukan database terpusat pada tahap awal.
 5. **Ekspor Laporan PDF:** Fitur untuk mengunduh hasil skrining dalam format dokumen PDF formal yang siap disimpan atau dibawa ke tenaga profesional.
- 
+
 ---
 
 ## 🛠️ Teknologi yang Digunakan
-* **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
-* **Logika & Penyimpanan:** Browser *Local Storage*, DOM Manipulation
-* **Pustaka Pendukung:** Pustaka render PDF (jsPDF / html2pdf)
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Logika & Penyimpanan:** Browser *Local Storage*, DOM Manipulation
+- **Pustaka Pendukung:** Pustaka render PDF (jsPDF / html2pdf)
 
 ---
 
@@ -47,12 +47,11 @@ Berikut adalah struktur direktori file di dalam repositori proyek:
  ┣ 📜 survey.html         # Halaman utama modul kuesioner skrining PHQ-9
  ┗ 📜 README.md           # Dokumentasi penjelasan proyek
 
-```text
-## 🚀 Cara Menjalankan Aplikasi
+##🚀 Cara Menjalankan Aplikasi
 
 
-## 👨‍💻 Repositori dan proyek aplikasi web ini dikembangkan oleh:
-* **Nama:** Tegar Tali Tafakur
-* **NIM:** 2012231051[cite: 1]
-* **Program Studi:** Sistem Informasi[cite: 1]
-* **Universitas M. H. Thamrin**[cite: 1]
+##👨‍💻 Repositori dan proyek aplikasi web ini dikembangkan oleh:
+Nama: Tegar Tali Tafakur
+NIM: 2012231051
+Program Studi: Sistem Informasi
+Universitas: Universitas M. H. Thamrin 
