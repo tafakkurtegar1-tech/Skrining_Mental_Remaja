@@ -22,7 +22,7 @@ Aplikasi ini dikembangkan sebagai bagian dari pelaksanaan Praktek Kerja Lapangan
 ---
 
 ## 🛠️ Teknologi yang Digunakan
-- **Frontend:** HTML5, CSS, JavaScript 
+- **Frontend:** HTML, CSS, JavaScript 
 - **Logika & Penyimpanan:** Browser *Local Storage*, DOM Manipulation
 - **Pustaka Pendukung:** Pustaka render PDF (jsPDF / html2pdf)
 
