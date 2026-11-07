@@ -54,7 +54,7 @@ Berikut adalah struktur direktori file di dalam repositori proyek:
  ┣ 📜 survey.html         # Halaman utama modul kuesioner skrining PHQ-9
  ┗ 📜 README.md           # Dokumentasi penjelasan proyek
 
-[![🚀 Klik Disini Untuk Menjalankan Aplikasi]](https://skriningmental.vercel.app/)
+🚀 [Klik Disini Untuk Menjalankan Aplikasi](https://skriningmental.vercel.app/)
 
 
 
