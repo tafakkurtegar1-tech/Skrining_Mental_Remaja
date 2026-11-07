@@ -34,6 +34,7 @@ Aplikasi ini dikembangkan sebagai bagian dari pelaksanaan Praktek Kerja Lapangan
 * **Program Studi:** Sistem Informasi
 * **Universitas M. H. Thamrin**
 ---
+🚀[Klik Disini Untuk Menjalankan Aplikasi](https://skriningmental.vercel.app/)
 
 ## 📂 Struktur Proyek & Hubungan Antarfile
 Berikut adalah struktur direktori file di dalam repositori proyek:
@@ -54,7 +55,6 @@ Berikut adalah struktur direktori file di dalam repositori proyek:
  ┣ 📜 survey.html         # Halaman utama modul kuesioner skrining PHQ-9
  ┗ 📜 README.md           # Dokumentasi penjelasan proyek
 
-🚀[Klik Disini Untuk Menjalankan Aplikasi](https://skriningmental.vercel.app/)
 
 
 
